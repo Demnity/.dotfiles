@@ -1,3 +1,4 @@
+Courtesy from https://github.com/BaptisteBdn/dotfiles. Fixed bugs and improved experience for the user.
 # Dotfiles
 
 My dotfile repository containing everything needed for my i3 setup : i3-gaps, rounded corners and pywal themes ! I am currently using EndeavourOS (arch based) but it should work on other distro with minor modifications.
