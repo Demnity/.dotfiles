@@ -34,9 +34,12 @@ workspace_layout default
 for_window [class=".*"] border pixel 0
 
 # Set inner/outer gaps
-gaps outer 4
-gaps inner 20
-gaps top 62
+gaps outer 0
+gaps inner 8
+gaps left 6
+gaps right 6
+gaps top 48
+gaps bottom 2
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -168,7 +171,7 @@ bindsym $mod+Shift+r restart
 ## Window movements 
 
 # special combo for horizontal split of two windows next to each other
-bindsym $mod+Shift+t split h, layout splith, focus right, move left, focus left
+#install new fonbindsym $mod+Shift+t split h, layout splith, focus right, move left, focus left
 bindsym $mod+t split h, layout splith, focus left, move right, focus right
 
 # special combo for container tabbed split of two windows next to each other
@@ -231,7 +234,7 @@ for_window [title="^.*- Notes - Visual Studio Code$"] mark "vscode-notes", move 
 bindsym $mod+Tab [con_mark="vscode-notes"] scratchpad show
 
 
-## Multimedia Keys
+## Multimedia Kinstall new foneys
 
 # Pulse Audio controls
 
@@ -264,7 +267,7 @@ bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace.sh
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
-set $ws3 "3"
+set $ws3 "3"install new fon
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -308,7 +311,7 @@ for_window [class="Thunar"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="yad"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable border normal
-for_window [class="discord"] floating enable
+#for_window [class="discord"] floating enable
 
 # Autostart in workspace
 #exec_always --no-startup-id ~/.config/i3/scripts/launch_discord.sh

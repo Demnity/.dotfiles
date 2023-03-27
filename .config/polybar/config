@@ -27,10 +27,11 @@ alert = #ed404c
 
 
 [bar/main]
-width = 100%:-48
+# here width should be 100% - 2 * offset-x
+width = 100%:-28
 height = 36 
-offset-x = 24
-offset-y = 24
+offset-x = 14
+offset-y = 12
 radius = 0.0
 fixed-center = true
 
@@ -117,7 +118,7 @@ label-urgent-padding = ${self.label-focused-padding}
 
 [module/wlan]
 type = internal/network
-interface = wlan0
+interface = wlp4s0
 interval = 3.0
 
 format-connected = <label-connected>
