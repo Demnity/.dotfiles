@@ -169,6 +169,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 ## Window movements 
+# adjust backlight with 'light' package
+# NOTE: remove sudo from 'light' with 'sudo chmod +s /usr/bin/light'
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
 
 # special combo for horizontal split of two windows next to each other
 #install new fonbindsym $mod+Shift+t split h, layout splith, focus right, move left, focus left
@@ -290,7 +294,7 @@ exec --no-startup-id redshift -l 51.59:4.21 -g 0.8 -m randr
 exec --no-startup-id numlockx on
 
 #transparency
-#!!!!!!picom might set background to black, install hsetroot pkg
+#picom might set background to black, install 'hsetroot'
 #exec --no-startup-id picom -CGb
 exec --no-startup-id picom -b
 # Start pywal from wallpaper directory
